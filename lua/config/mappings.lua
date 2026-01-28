@@ -1,13 +1,15 @@
-vim.keymap.set("n", "<leader>jk", vim.cmd.Ex)
+local keymap = vim.keymap
 
-vim.keymap.set("n", "<C-s>", vim.cmd.w)
+-- Normal
+keymap.set("n", "<leader>jk", "<cmd>Ex<cr>")
+keymap.set("n", "<C-s>", "<cmd>w<cr>")
+keymap.set("n", "<Esc>", "<cmd>noh<cr>", { desc = "No highlight" })
 
-vim.keymap.set("n", "<Esc>", vim.cmd.noh, { desc = "No highlight" })
+-- Insert
+keymap.set("i", "jk", "<Esc>")
 
-vim.keymap.set("i", "jk", "<Esc>")
-
-vim.keymap.set("i", "<C-h>", "<Left>")
-vim.keymap.set("i", "<C-j>", "<Down>")
-vim.keymap.set("i", "<C-k>", "<Up>")
-vim.keymap.set("i", "<C-l>", "<Right>")
+keymap.set("i", "<C-h>", "<Left>")
+keymap.set("i", "<C-j>", "<Down>")
+keymap.set("i", "<C-k>", "<Up>")
+keymap.set("i", "<C-l>", "<Right>")
 
