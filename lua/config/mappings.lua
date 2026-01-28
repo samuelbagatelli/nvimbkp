@@ -2,7 +2,7 @@ vim.keymap.set("n", "<leader>jk", vim.cmd.Ex)
 
 vim.keymap.set("n", "<C-s>", vim.cmd.w)
 
-vim.keymap.set("n", "<Esc>", vim.cmd.noh)
+vim.keymap.set("n", "<Esc>", vim.cmd.noh, { desc = "No highlight" })
 
 vim.keymap.set("i", "jk", "<Esc>")
 
