@@ -8,6 +8,6 @@ return {
 			install_dir = vim.fn.stdpath("data") .. "/site"
 		})
 
-		treesitter.install({ "lua", "vim", "vimdoc" })
+		treesitter.install({ "lua", "vim", "vimdoc", "markdown" })
 	end
 }

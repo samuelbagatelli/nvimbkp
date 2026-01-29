@@ -4,6 +4,10 @@ return {
 	root_markers = { { ".luarc.json", ".luarc.jsonc" }, ".git" },
 	settings = {
 		Lua = {
+			completion = {
+				callSnippet = "Disable",
+				displayContext = 10,
+			},
 			diagnostics = {
 				globals = { "vim" }
 			},
