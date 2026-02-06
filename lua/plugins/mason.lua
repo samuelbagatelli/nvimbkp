@@ -1,7 +1,7 @@
 return {
 	"mason-org/mason-lspconfig.nvim",
 	opts = {
-		ensure_installed = { "lua_ls", "pylsp" },
+		ensure_installed = { "lua_ls" },
 	},
 	dependencies = {
 		{
@@ -16,6 +16,11 @@ return {
 					},
 				},
 			},
+		},
+		{
+			"stevearc/dressing.nvim",
+			opts = {},
+			event = "VeryLazy",
 		},
 	},
 }
