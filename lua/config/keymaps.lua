@@ -15,12 +15,6 @@ vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagn
 
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
--- TIP: Disable arrow keys in normal mode
-vim.keymap.set("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
-vim.keymap.set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>')
-vim.keymap.set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
-vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
-
 --  Use CTRL+<hjkl> to switch between windows
 vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
 vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
@@ -52,8 +46,8 @@ vim.keymap.set("n", "Q", "<nop>", { desc = "Do not press Q" })
 vim.keymap.set("i", "jk", "<Esc>", { desc = "Fast jk to exit" })
 
 vim.keymap.set("i", "<C-h>", "<Left>", { desc = "Move cursor to the left" })
-vim.keymap.set("i", "<C-j>", "<Down>", { desc = "Move cursor to the down" })
-vim.keymap.set("i", "<C-k>", "<Up>", { desc = "Move cursor to the up" })
+vim.keymap.set("i", "<C-j>", "<Down>", { desc = "Move cursor down" })
+vim.keymap.set("i", "<C-k>", "<Up>", { desc = "Move cursor up" })
 vim.keymap.set("i", "<C-l>", "<Right>", { desc = "Move cursor to the right" })
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move selected lines down" })
